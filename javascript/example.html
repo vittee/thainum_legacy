@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ThaiNum Example</title>
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.8.1/semantic.min.css">
+
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="lib/thainum.js"></script>
+	<script>
+		$(function() {
+			var $thaitextResult = $('span.thaitext');
+			var $thaibahtResult = $('span.thaibaht');
+
+			$('input.thaitext').on('input', function() {
+				$thaitextResult.text(ThaiNum.text($(this).val()));
+			});
+
+			$('input.thaibaht').on('input', function() {
+				$thaibahtResult.text(ThaiNum.bahtText($(this).val()));
+			});
+		});
+	</script
+</head>
+<body>
+
+<div class="ui grid">
+	<div class="two column row">
+		<div class="column">
+			<div class="ui labeled input fluid">
+				<a class="ui label">Thai Text</a>
+				<input class="thaitext" type="text" placeholder="1234">
+			</div>
+		</div>
+
+		<div class="column">
+			<span class="thaitext"></span>
+		</div>
+	</div>
+
+	<div class="two column row">
+		<div class="column">
+			<div class="ui labeled input fluid">
+				<a class="ui label">Thai Baht</a>
+				<input class="thaibaht" type="text" placeholder="1234">
+			</div>
+		</div>
+
+		<div class="column">
+			<span class="thaibaht"></span>
+		</div>
+	</div>	
+</div>
+</body>
+</html>
