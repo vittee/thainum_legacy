@@ -12,7 +12,7 @@
     },
     "autoload": {
         "psr-4": {
-        	"Vittee\\ThaiNum\\": "src/"
+            "Vittee\\ThaiNum\\": "src/"
         }
     }    
 }
