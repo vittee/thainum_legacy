@@ -2,14 +2,14 @@ package com.vittee.thainum.provider;
 
 public class BaseNameProvider implements NameProvider {
 
-    private final String[] strings;
+    private final String[] names;
 
-    public BaseNameProvider(String... strings) {
-        this.strings = strings;
+    public BaseNameProvider(String... names) {
+        this.names = names;
     }
 
     @Override
     public String getName(int i) {
-        return strings[i];
+        return names[i];
     }
 }
