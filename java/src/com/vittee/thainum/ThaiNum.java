@@ -119,12 +119,14 @@ public class ThaiNum {
 
     private static class Part {
 
-        private int i;
+        private long i;
         private double f;
 
         public Part(double d) {
-            i = (int) d;
-            f = d - i;
+            if (d < 1e20) {
+                i = (long) d;
+                f = d - i;
+            }
         }
 
 
