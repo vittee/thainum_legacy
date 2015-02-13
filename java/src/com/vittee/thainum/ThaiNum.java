@@ -33,7 +33,7 @@ public class ThaiNum {
         this.unitNameProvider = unitNameProvider;
     }
 
-    public String convert(long l) {
+    private String convert(long l) {
         int[] digits = digitizer.digitize(l);
 
         if (digits.length == 1) {
