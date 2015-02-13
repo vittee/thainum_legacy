@@ -82,15 +82,17 @@ public class ThaiNum {
         sb.append(convert(p.i));
 
         if (p.f != 0) {
-            sb.append("จุด");
-
             String[] pp = String.format("%f", d).split("\\.");
             String fs = pp[pp.length - 1].replaceAll("0*$", "");
 
-            String[] digitized = digitizer.digitize(fs, digitNameProvider);
+            if (!fs.isEmpty()) {
+                sb.append("จุด");
 
-            for (String ds : digitized) {
-                sb.append(ds);
+                String[] digitized = digitizer.digitize(fs, digitNameProvider);
+
+                for (String ds : digitized) {
+                    sb.append(ds);
+                }
             }
         }
 
