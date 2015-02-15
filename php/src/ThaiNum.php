@@ -26,7 +26,7 @@ class ThaiNum {
 		$nn = self::digitize($n, function($d) { return (int) $d; });
 
 		if (count($nn) == 1) {
-			return self::$digitNames[$nn[0]];
+			return ($n<0?'ลบ':'').self::$digitNames[$nn[0]];
 		}
 
 		$nn = array_reduce($nn, function($a, $d) {
