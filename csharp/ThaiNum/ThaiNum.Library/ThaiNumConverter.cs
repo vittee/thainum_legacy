@@ -41,19 +41,20 @@ namespace ThaiNum.Library
         {
             byte[] digits = digitizer.Digitize(l);
 
-            if (digits.Length == 1)
-            {
-                return digitNameProvider[digits[0]];
-            }
-
-            bool t = false;
             StringBuilder sb = new StringBuilder();
 
             if (l < 0)
             {
                 sb.Append("ลบ");
+            }            
+
+            if (digits.Length == 1)
+            {
+                sb.Append(digitNameProvider[digits[0]]);
+                return sb.ToString();
             }
 
+            bool t = false;            
             for (int i = 0; i < digits.Length; i++)
             {
                 int d = digits[i];

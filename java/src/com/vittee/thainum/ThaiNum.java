@@ -36,16 +36,18 @@ public class ThaiNum {
     private String convert(long l) {
         int[] digits = digitizer.digitize(l);
 
-        if (digits.length == 1) {
-            return digitNameProvider.getName(digits[0]);
-        }
-
-        boolean t = false;
         StringBuilder sb = new StringBuilder();
 
         if (l < 0) {
             sb.append("ลบ");
+        }        
+
+        if (digits.length == 1) {
+            sb.append(digitNameProvider.getName(digits[0]));
+            return sb.toString();
         }
+
+        boolean t = false;
 
         for (int i = 0; i < digits.length; i++) {
             int d = digits[i];
