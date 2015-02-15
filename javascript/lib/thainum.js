@@ -20,7 +20,7 @@
 
   function convert(n) {
     return +n>=1e21 ? '' : (function(nn) {
-      return nn.length==1 ? digitNames[nn[0]] : nn.reduce(function(a, d, i) {
+      return nn.length==1 ? ((n<0?'ลบ':'') + digitNames[nn[0]]) : nn.reduce(function(a, d, i) {
           var c = (a.l-i-1) % 6;
 
           a.s += (d == 2 && c == 1) ? 'ยี่' : (d == 1 && c == 0 && a.t) ? 'เอ็ด' : ((d == 1 && c == 1) || d == 0) ? '' : digitNames[d];
