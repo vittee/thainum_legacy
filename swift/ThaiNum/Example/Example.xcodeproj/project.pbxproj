@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		997862E81A9203C500ECBF2E /* ThaiNum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B40F981A8F7F64009FBF71 /* ThaiNum.framework */; };
+		997862E91A9203C500ECBF2E /* ThaiNum.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 99B40F981A8F7F64009FBF71 /* ThaiNum.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		99B40F751A8F7F3F009FBF71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B40F741A8F7F3F009FBF71 /* AppDelegate.swift */; };
 		99B40F771A8F7F3F009FBF71 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99B40F761A8F7F3F009FBF71 /* Images.xcassets */; };
 		99B40F7A1A8F7F3F009FBF71 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99B40F781A8F7F3F009FBF71 /* MainMenu.xib */; };
 		99B40F861A8F7F3F009FBF71 /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B40F851A8F7F3F009FBF71 /* ExampleTests.swift */; };
-		99B40F9C1A8F807C009FBF71 /* ThaiNum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B40F981A8F7F64009FBF71 /* ThaiNum.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +24,20 @@
 			remoteInfo = Example;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		997862EA1A9203C500ECBF2E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				997862E91A9203C500ECBF2E /* ThaiNum.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		99B40F6F1A8F7F3E009FBF71 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99B40F9C1A8F807C009FBF71 /* ThaiNum.framework in Frameworks */,
+				997862E81A9203C500ECBF2E /* ThaiNum.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +135,7 @@
 				99B40F6B1A8F7F3E009FBF71 /* Sources */,
 				99B40F6C1A8F7F3E009FBF71 /* Frameworks */,
 				99B40F6D1A8F7F3E009FBF71 /* Resources */,
+				997862EA1A9203C500ECBF2E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -405,6 +421,7 @@
 				99B40F8B1A8F7F3F009FBF71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		99B40F8C1A8F7F3F009FBF71 /* Build configuration list for PBXNativeTarget "ExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +430,7 @@
 				99B40F8E1A8F7F3F009FBF71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
