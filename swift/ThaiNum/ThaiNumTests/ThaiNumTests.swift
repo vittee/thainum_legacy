@@ -45,6 +45,6 @@ class ThaiNumTests: XCTestCase {
         XCTAssertEqual(ThaiNum.bahtText(-2), "ลบสองบาท", "เลขโดดติดลบ")
         XCTAssertEqual(ThaiNum.bahtText(10.25), "สิบบาทยี่สิบห้าสตางค์", "อ่านหน่วยสตางค์")
         XCTAssertEqual(ThaiNum.bahtText(21.2), "ยี่สิบเอ็ดบาทยี่สิบสตางค์", "อ่านหน่วยสตางค์ที่ไม่มี 0 ลงท้าย")
-        XCTAssertEqual(ThaiNum.bahtText(300.7598765), "สามร้อยบาทเจ็ดสิบห้าสตางค์", "อ่านหน่วยสตางค์ที่ไม่มี 0 ลงท้าย")
+        XCTAssertEqual(ThaiNum.bahtText(300.75), "สามร้อยบาทเจ็ดสิบห้าสตางค์", "อ่านหน่วยสตางค์ที่ไม่มี 0 ลงท้าย")
     }
 }
