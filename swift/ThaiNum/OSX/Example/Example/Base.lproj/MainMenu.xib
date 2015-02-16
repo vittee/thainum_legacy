@@ -15,7 +15,6 @@
             <connections>
                 <outlet property="labelBaht" destination="Syk-aj-uqc" id="hY4-1K-5zf"/>
                 <outlet property="labelText" destination="HpV-QN-dVU" id="oei-Au-0kI"/>
-                <outlet property="textFielBaht" destination="OWu-jh-dF9" id="5J3-nr-qHl"/>
                 <outlet property="textFieldBaht" destination="OWu-jh-dF9" id="aHO-bB-XPE"/>
                 <outlet property="textFieldText" destination="zby-fq-8IV" id="Ld1-y3-DOK"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>

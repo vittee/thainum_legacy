@@ -10,7 +10,7 @@
 		990F19C71A8EFB80007AD4F9 /* ThaiNum.h in Headers */ = {isa = PBXBuildFile; fileRef = 990F19C61A8EFB80007AD4F9 /* ThaiNum.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		990F19CD1A8EFB80007AD4F9 /* ThaiNum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 990F19C11A8EFB80007AD4F9 /* ThaiNum.framework */; };
 		990F19D41A8EFB80007AD4F9 /* ThaiNumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990F19D31A8EFB80007AD4F9 /* ThaiNumTests.swift */; };
-		990F19DE1A8EFDA6007AD4F9 /* ThaiNum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990F19DD1A8EFDA6007AD4F9 /* ThaiNum.swift */; };
+		99B0E5091A923D3F0018955E /* ThaiNum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B0E5081A923D3F0018955E /* ThaiNum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,7 @@
 		990F19CC1A8EFB80007AD4F9 /* ThaiNumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThaiNumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		990F19D21A8EFB80007AD4F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		990F19D31A8EFB80007AD4F9 /* ThaiNumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThaiNumTests.swift; sourceTree = "<group>"; };
-		990F19DD1A8EFDA6007AD4F9 /* ThaiNum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThaiNum.swift; sourceTree = "<group>"; };
+		99B0E5081A923D3F0018955E /* ThaiNum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThaiNum.swift; path = ../../Common/ThaiNum.swift; sourceTree = "<group>"; };
 		99B40F8F1A8F7F3F009FBF71 /* Example.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Example.xcodeproj; path = Example/Example.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,8 +89,8 @@
 		990F19C31A8EFB80007AD4F9 /* ThaiNum */ = {
 			isa = PBXGroup;
 			children = (
+				99B0E5081A923D3F0018955E /* ThaiNum.swift */,
 				990F19C61A8EFB80007AD4F9 /* ThaiNum.h */,
-				990F19DD1A8EFDA6007AD4F9 /* ThaiNum.swift */,
 				990F19C41A8EFB80007AD4F9 /* Supporting Files */,
 			);
 			path = ThaiNum;
@@ -260,7 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				990F19DE1A8EFDA6007AD4F9 /* ThaiNum.swift in Sources */,
+				99B0E5091A923D3F0018955E /* ThaiNum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

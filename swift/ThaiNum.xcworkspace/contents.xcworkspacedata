@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
-   <FileRef
-      location = "group:ThaiNum/ThaiNum.xcodeproj">
-   </FileRef>
+   <Group
+      location = "container:"
+      name = "iOS">
+      <FileRef
+         location = "group:ThaiNum/iOS/ThaiNum.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "OSX">
+      <FileRef
+         location = "group:ThaiNum/OSX/ThaiNum.xcodeproj">
+      </FileRef>
+   </Group>
 </Workspace>
